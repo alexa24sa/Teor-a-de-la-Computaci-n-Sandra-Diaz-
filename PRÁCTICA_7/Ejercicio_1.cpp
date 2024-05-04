@@ -32,7 +32,7 @@ int main(){
 	bool valido=true;
 	
 	do{
-		cout<<"Digite un elemento de su cadena a/b, en caso de ser cadena vacía inserte E: ";
+		cout<<"Digite un elemento de su cadena a/b, en caso de ser cadena vac"<<char(161)<<"a inserte E: ";
 		cin>>dato;
 		agregarPila(pila, dato);
 		
@@ -55,9 +55,9 @@ int main(){
 	}while(tolower(rpt) == 's');
 	
 	if ((longitud_b == longitud_a)&&(valido=true)){
-		    cout << "La cadena w insertada es válida.\n";
+		    cout << "La cadena w insertada SI es v"<<char(160)<<"lida.\n";
 		} else {
-		    cout << "La cadena w insertada no es válida.\n";
+		    cout << "La cadena w insertada NO es v"<<char(160)<<"lida.\n";
 		}
 	
 	return 0;
@@ -73,7 +73,7 @@ void agregarPila(Nodo *&pila, char n){
 	pila = nuevoNodo; /*finalmente a "pila" se le asignará la dirección de memoria de nuevoNodo
 	ya que dentro pila ya habrá un nuevo espacio en el que almacenar valores*/
 	
-	cout <<"\t Elemento "<<n<<" ha sido agregado a la pila correctamente";	
+	cout <<"\t Elemento "<<n<<" ha sido agregado a la pila correctamente\n";	
 }
 
 
