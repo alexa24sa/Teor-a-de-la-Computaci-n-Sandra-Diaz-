@@ -43,6 +43,7 @@ int main(){
 		    longitud_a++;
 		}else if ((pila->dato) =='E'||(pila->dato) =='e'){
 		    cout<<"\nLa cadena w insertada, pertenece Lenjuage y es la siguiente "<< char(157);
+		    return 0;
 		}else if (pila->dato == 'b'){
 		    longitud_b++;
 		} else {
@@ -87,4 +88,5 @@ void sacarPila(Nodo *&pila, char &n){
     posición*/
     delete aux; //eliminamos lo contenido dentro de la variable auxiliar 
 }
+
 
