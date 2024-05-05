@@ -25,7 +25,7 @@ void sacarPila(Nodo *&, char &);
 int main(){
 	//llamamos al struct dentro del main principal para poderla usar como pila
 	Nodo *pila  = NULL; //inicializamos un struct de tipo Nodo como apuntador de nombre pila con valor de cero
-	int longitud_a, longitud_b; //variable auxiliar
+	int longitud_a=0, longitud_b=0; //variable auxiliar
 	char dato;
 	char rpt;
 	string cadena_a, cadena_b;
@@ -54,7 +54,7 @@ int main(){
 		
 	}while(tolower(rpt) == 's');
 	
-	if ((longitud_b == longitud_a)&&(valido=true)){
+	if ((longitud_b == longitud_a)&&(valido==true)){
 		    cout << "La cadena w insertada SI es v"<<char(160)<<"lida.\n";
 		} else {
 		    cout << "La cadena w insertada NO es v"<<char(160)<<"lida.\n";
