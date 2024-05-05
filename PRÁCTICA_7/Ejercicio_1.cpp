@@ -37,7 +37,7 @@ int main(){
 		agregarPila(pila, dato);
 		
 		if(pila->dato == 'a'){
-		    if (longitud_b > 1){
+		    if (longitud_b > 0){
 		        valido = false;
 		    }
 		    longitud_a++;
@@ -87,3 +87,4 @@ void sacarPila(Nodo *&pila, char &n){
     posición*/
     delete aux; //eliminamos lo contenido dentro de la variable auxiliar 
 }
+
